@@ -1,0 +1,45 @@
+
+.list-default{
+  @include list-default;
+}
+
+.list-users{
+  @include list-default;
+  li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .oval{
+    margin-right: 10px;
+  }
+}
+
+
+.list-users-inline{
+  @include list-default;
+  display: inline-block;
+  li{
+    display: inline-block;
+    vertical-align: top;
+  }
+  li:not(:first-child){
+    margin-left: -8px;
+  }
+}
+.list-users-inline-text{
+  margin-left: .3rem;
+  color: #77909D;
+}
+
+.list-dotted{
+  @include list-default;
+  li{
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .dot{
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}

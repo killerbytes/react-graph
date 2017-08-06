@@ -1,0 +1,64 @@
+.widget{
+  display: inline-flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  
+  vertical-align: top;
+  width: 100%;
+  border-radius: 6px;	
+  background-color: #FFFFFF;
+  box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.1);
+  min-height: 300px;
+  position: relative;
+  .widget-title{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $border-color;    
+    margin-bottom: 1rem;
+    .actions{
+      position: relative;
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      margin-right: .5rem;
+      >div{
+        display: inline-block;
+      }
+      >div:first-child{
+        margin-left: auto;
+      }
+    }
+  }
+  h4{
+    margin: 0;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .flex-chart{
+    margin-left: auto;
+  }
+  .widget-content{
+    flex: 1 0 auto;
+    margin: 0 1rem;
+    display: flex;
+  }
+  .widget-footer{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid $border-color;
+    padding: .2rem 1rem;
+    .label{
+      margin-left: 1.5rem;
+    }
+  }
+
+  @include respond-to(small){
+    width: 33.33%;
+    &+.widget{
+      margin-left: 1rem;
+    }
+  }
+}
+

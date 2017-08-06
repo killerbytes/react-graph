@@ -1,0 +1,22 @@
+.bar-chart{
+  margin-left: 3rem;
+  flex-grow: 1;
+  .bar-wrapper{
+    height: 26px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .bar{
+    background-color: #D8DDE6;
+    height: 10px;
+    width: 100%;
+    border-radius: 100px;
+    margin-right: 1rem;
+    .progress{
+      background-color: #EE352E;
+      height: 10px;
+      border-radius: 100px;
+    }
+  }
+}

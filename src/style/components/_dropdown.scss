@@ -1,0 +1,19 @@
+      
+.az-select {
+  @include dropdown;
+}
+
+
+.az-dropdown{
+  @include dropdown;
+  position: initial;
+  .az-menu{
+    right: 0;
+    width: auto;
+  }
+  .icon-settings{
+    padding: 3px;
+    border-radius: 100px;
+  }
+
+}

@@ -1,0 +1,45 @@
+.icon{
+  display: inline-block;
+}
+
+.icon-settings{
+  background-image: url('icons/settings.svg');
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-arrow-down{
+  background-image: url('icons/arrow-down.svg');
+  background-position: center center;
+  width: 10px;
+  height: 8px;
+}
+
+.icon-notification{
+  background-image: url('icons/notifications.png');
+  background-position: center center;
+  width: 22px;
+  height: 22px;
+}
+
+.icon-help{
+  background-image: url('icons/help.png');
+  background-position: center center;
+  width: 22px;
+  height: 22px;
+}
+
+.icon-gear{
+  background-image: url('icons/gear.png');
+  background-position: center center;
+  width: 22px;
+  height: 22px;
+}
+
+.icon-time{
+  background-image: url('icons/time.png');
+  background-position: center center;
+  width: 32px;
+  height: 32px;
+}
