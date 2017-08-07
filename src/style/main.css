@@ -1,42 +1,42 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-.az-select {
-  position: relative; }
-  .az-select.show > .az-menu {
-    display: block; }
-  .az-select > .az-toggle {
-    background-color: #FFF;
-    padding: 5px 8px;
+.az-select.show > .az-menu {
+  display: block; }
+
+.az-select > .az-toggle {
+  background-color: #FFF;
+  padding: 5px 8px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  color: #77909D; }
+
+.az-select > .az-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 120px;
+  border: 1px solid #D8DDE6;
+  background-color: #FFF;
+  position: absolute;
+  display: none;
+  transition: -webkit-transform ease 250ms;
+  transition: transform ease 250ms; }
+  .az-select > .az-menu li {
+    color: #77909D;
     cursor: pointer;
-    border: none;
-    font-size: 14px;
-    color: #77909D; }
-  .az-select > .az-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    border: 1px solid #D8DDE6;
-    background-color: #FFF;
-    position: absolute;
-    display: none;
-    transition: -webkit-transform ease 250ms;
-    transition: transform ease 250ms; }
-    .az-select > .az-menu li {
-      color: #77909D;
-      cursor: pointer;
-      padding: 5px 8px; }
-      .az-select > .az-menu li:hover {
-        background-color: #657FAC;
-        color: #FFF; }
-  .az-select .icon-angle-down {
-    background-image: url("icons/angle-down.svg");
-    background-position: center center;
-    width: 10px;
-    height: 8px;
-    margin-left: .5rem; }
+    padding: 5px 8px; }
+    .az-select > .az-menu li:hover {
+      background-color: #657FAC;
+      color: #FFF; }
+
+.az-select .icon-angle-down {
+  background-image: url("icons/angle-down.svg");
+  background-position: center center;
+  width: 10px;
+  height: 8px;
+  margin-left: .5rem; }
 
 .az-dropdown {
-  position: relative;
   position: initial; }
   .az-dropdown.show > .az-menu {
     display: block; }
@@ -51,7 +51,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%;
+    min-width: 120px;
     border: 1px solid #D8DDE6;
     background-color: #FFF;
     position: absolute;

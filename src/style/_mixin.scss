@@ -14,7 +14,6 @@
 }
 
 @mixin dropdown{
-  position: relative;
   &.show>.az-menu {
     display: block;
   }        
@@ -30,7 +29,7 @@
 
   >.az-menu {
     @include list-default;
-    width: 100%;
+    min-width: 120px;
     border: 1px solid $border-color;
     background-color: #FFF;
     position: absolute;
