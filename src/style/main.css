@@ -119,7 +119,8 @@
 
 header {
   position: relative;
-  font-size: 14px; }
+  font-size: 14px;
+  background-color: #FFF; }
   header:after {
     content: '';
     position: absolute;
@@ -234,8 +235,6 @@ nav {
   min-height: 300px;
   position: relative; }
   .widget .widget-title {
-    display: flex;
-    align-items: center;
     border-bottom: 1px solid #D8DDE6;
     margin-bottom: 1rem; }
     .widget .widget-title .actions {
@@ -248,9 +247,16 @@ nav {
         display: inline-block; }
       .widget .widget-title .actions > div:first-child {
         margin-left: auto; }
+    @media (min-width: 768px) {
+      .widget .widget-title {
+        display: flex;
+        align-items: center; }
+        .widget .widget-title h4 {
+          padding-bottom: 1rem; } }
   .widget h4 {
     margin: 0;
     padding: 1rem;
+    padding-bottom: 0;
     font-size: 16px;
     font-weight: normal; }
   .widget .flex-chart {
